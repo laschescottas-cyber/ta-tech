@@ -259,6 +259,17 @@ body{font-size:18px;color:#f5f8ff;background:#090f1b}
 /* Identidad simplificada y legible */
 .brand-icon{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.055em;line-height:1;text-align:center}
 @media(max-width:600px){.brand-icon{font-size:19px}}
+
+/* Cinta de servicios continua y accesible */
+.strip-moving{overflow:hidden;position:relative;white-space:nowrap}
+.strip-moving .strip-track{display:flex;width:max-content;animation:ta-marquee 34s linear infinite;will-change:transform}
+.strip-moving .strip-group{flex:0 0 auto;display:flex;align-items:center;gap:clamp(32px,3.5vw,70px);padding:19px clamp(16px,2vw,35px)}
+.strip-moving .strip-group span{display:flex;align-items:center;gap:clamp(32px,3.5vw,70px);font-size:15px;font-weight:800;letter-spacing:.065em;color:#e0f0ff}
+.strip-moving .strip-group span::after{content:"✦";color:#58e6ef;font-size:12px}
+@keyframes ta-marquee{to{transform:translateX(-50%)}}
+.strip-moving:hover .strip-track{animation-play-state:paused}
+@media(max-width:600px){.strip-moving .strip-group{padding-block:15px}.strip-moving .strip-group span{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.strip-moving .strip-track{animation:none;flex-wrap:wrap;width:auto}.strip-moving .strip-group{flex-wrap:wrap}.strip-moving .strip-group[aria-hidden=true]{display:none}}
 </style>
 </head>
 <body>
@@ -281,7 +292,7 @@ body{font-size:18px;color:#f5f8ff;background:#090f1b}
     </div>
   </div>
 </section>
-<div class="strip"><div class="wrap strip-inner"><span>ARMADO PERSONALIZADO</span><span>MANTENIMIENTO Y REPARACIÓN</span><span>UPGRADES Y COMPONENTES</span><span>ATENCIÓN DIRECTA</span></div></div>
+<div class="strip strip-moving" aria-label="PCs A MEDIDA · REPARACIÓN Y DIAGNÓSTICO · UPGRADES Y COMPONENTES · MANTENIMIENTO · ATENCIÓN PERSONALIZADA · CABA Y GRAN BUENOS AIRES"><div class="strip-track"><div class="strip-group"><span>PCs A MEDIDA</span><span>REPARACIÓN Y DIAGNÓSTICO</span><span>UPGRADES Y COMPONENTES</span><span>MANTENIMIENTO</span><span>ATENCIÓN PERSONALIZADA</span><span>CABA Y GRAN BUENOS AIRES</span></div><div class="strip-group" aria-hidden="true"><span>PCs A MEDIDA</span><span>REPARACIÓN Y DIAGNÓSTICO</span><span>UPGRADES Y COMPONENTES</span><span>MANTENIMIENTO</span><span>ATENCIÓN PERSONALIZADA</span><span>CABA Y GRAN BUENOS AIRES</span></div></div></div>
 <section class="section section-alt" id="nosotros"><div class="wrap"><div class="section-heading"><span class="eyebrow">Quiénes somos</span><h2>Nos gustan las PCs. <span class="gradient-text">Y sabemos cómo trabajarlas.</span></h2><p>Somos Tiziano y Anne. Nos dedicamos al armado de computadoras, las mejoras de hardware y la reparación de equipos. Nos interesa el mundo gamer y también ayudar a quienes necesitan una PC confiable para estudiar o trabajar.</p><p>Te asesoramos para elegir componentes compatibles, mejorar el rendimiento o resolver una falla. Antes de avanzar, te explicamos qué necesita tu equipo y el presupuesto del trabajo.</p></div><div class="why-grid"><div class="why-item"><div class="service-icon">♡</div><b>Trato personalizado</b><p>Escuchamos tu problema y buscamos una solución adaptada a tu equipo y presupuesto.</p></div><div class="why-item"><div class="service-icon">◇</div><b>Presupuesto transparente</b><p>Te explicamos el diagnóstico y el trabajo antes de avanzar, sin sorpresas.</p></div><div class="why-item"><div class="service-icon">✓</div><b>Trabajo responsable</b><p>Priorizamos repuestos adecuados y detallamos las condiciones de garantía de cada servicio.</p></div></div><div class="coverage"><div class="info-block"><strong>◷ Horarios</strong><p>Lunes a sábados · 8:00 a 20:00</p><small>Consultas y coordinación por WhatsApp</small></div><div class="info-block"><strong>⌖ Zonas de cobertura</strong><p>Ramos Mejía · Boulogne · GBA · CABA</p><small>Modalidad de atención y traslados a coordinar</small></div></div></div></section>
 <section class="section section-alt" id="servicios"><div class="wrap"><div class="section-heading"><span class="eyebrow">Lo que hacemos</span><h2>Todo lo que necesitás <span class="gradient-text">para tu PC.</span></h2><p>Armado, reparación y mantenimiento. Elegí el servicio que necesitás y consultanos sin vueltas.</p></div><div class="services">
     <article class="service-card"><div class="service-icon" aria-hidden="true">▣</div><h3>Armado de PC a medida</h3><p>PC Gamer, streaming, edición u oficina. Elegimos componentes compatibles y ensamblamos tu equipo según tu uso y presupuesto.</p><a class="wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por el armado de una PC a medida." target="_blank" rel="noopener noreferrer">Presupuestar armado →</a></article>
