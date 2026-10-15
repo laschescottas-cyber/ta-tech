@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laschescottas-cyber.github.io/ta-tech/sitemap.xml
