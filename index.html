@@ -293,10 +293,16 @@ body{font-size:18px;color:#f5f8ff;background:#090f1b}
 .quote-note{font-size:13px;line-height:1.5;color:#a8b9d0;margin:2px 0 0}
 @media(max-width:530px){.quote-options{grid-template-columns:1fr}.quote-dialog{max-height:92dvh}.quote-form{padding:20px}.quote-options label{padding:10px}}
 
+
+/* El signo ampersand utiliza una fuente clásica más legible que el resto del título. */
+.brand-amp{font-family:Arial,Helvetica,sans-serif!important;font-weight:700;letter-spacing:0;display:inline;color:inherit;font-style:normal}
+.reviews-shell h3 .brand-amp{font-size:.92em;vertical-align:.025em}
+.brand-copy .brand-amp{font-size:1em}
+
 </style>
 </head>
 <body>
-  <header class="site-header"><div class="wrap nav"><a class="brand" href="#inicio" aria-label="T&A Tech, volver al inicio"><span class="brand-icon">TA</span><span class="brand-copy"><strong>Tiziano & Anne</strong><small>SERVICIO TÉCNICO & PC BUILDER</small></span></a><nav class="nav-links" id="navLinks" aria-label="Navegación principal"><a href="#nosotros">Quiénes somos</a><a href="#servicios">Servicios</a><a href="#catalogo">Catálogo</a><a href="#armado">Armado & Upgrade</a><a href="#optimizacion">Optimización</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav><button class="hamburger" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">☰</button></div></header>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="#inicio" aria-label="T&A Tech, volver al inicio"><span class="brand-icon">TA</span><span class="brand-copy"><strong>Tiziano <span class="brand-amp">&amp;</span> Anne</strong><small>SERVICIO TÉCNICO & PC BUILDER</small></span></a><nav class="nav-links" id="navLinks" aria-label="Navegación principal"><a href="#nosotros">Quiénes somos</a><a href="#servicios">Servicios</a><a href="#catalogo">Catálogo</a><a href="#armado">Armado & Upgrade</a><a href="#optimizacion">Optimización</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav><button class="hamburger" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">☰</button></div></header>
   <main>
 <section class="hero hero-store" id="inicio">
   <div class="wrap hero-grid">
@@ -352,7 +358,7 @@ body{font-size:18px;color:#f5f8ff;background:#090f1b}
       </div>
       <div class="reviews-shell">
         <div>
-          <h3>¿Ya llevaste tu PC a T&A Tech?</h3>
+          <h3>¿Ya llevaste tu PC a T<span class="brand-amp">&amp;</span>A Tech?</h3>
           <p>Contanos cómo te fue. Con tu permiso, podemos compartir tu opinión en esta página.</p>
         </div>
         <a class="btn btn-primary wa-link" href="#" data-message="Hola Tiziano y Anne, quiero compartir mi reseña sobre el servicio técnico." target="_blank" rel="noopener noreferrer">Enviar mi reseña ↗</a>
