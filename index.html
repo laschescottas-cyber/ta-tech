@@ -122,12 +122,87 @@
     @media(max-width:1000px){.wrap{width:min(calc(100% - 48px),var(--max))}.service-card{padding:26px}.service-card p{font-size:17px}}
     @media(max-width:680px){.wrap{width:calc(100% - 36px)}.reviews-shell{grid-template-columns:1fr}.services{grid-template-columns:1fr}.service-card{min-height:0}}
 
+
+/* Rediseño comercial: proporciones consistentes y secciones más visuales */
+:root{--max:1390px;--line:#29364a}
+body{font-size:18px;color:#f5f8ff;background:#090f1b}
+.wrap{width:min(calc(100% - 64px),var(--max))}
+.nav{height:84px}
+.nav-links{gap:20px}
+.nav-links a{font-size:15px}
+.hero-store{background:radial-gradient(ellipse at 80% 45%,#273c754e,transparent 48%),#080f1b;padding:68px 0 78px}
+.hero-store .hero-grid{grid-template-columns:minmax(0,.97fr) minmax(0,1.03fr);gap:55px}
+.hero-store h1{font-size:clamp(58px,5vw,82px);letter-spacing:-.055em;line-height:1.06;max-width:690px}
+.hero-store .lead{font-size:21px;max-width:600px}
+.hero-store .hero-copy{position:relative;z-index:2}
+.photo-hero{min-height:570px;border-radius:24px;overflow:hidden;background:radial-gradient(circle at 65% 50%,#444b9960,#14233c 42%,#101727 73%);border:1px solid #334c6c}
+.photo-hero .photo-image{position:absolute;inset:0;background:linear-gradient(90deg,#0d1421ab,#0d142114),url('https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=1100&q=85') center/cover;opacity:.45}
+.photo-hero .visual-orbit{width:85%;z-index:1}
+.photo-hero .pc{z-index:2;transform:scale(.95) perspective(900px) rotateY(-10deg) rotateX(4deg)}
+.photo-tag{position:absolute;z-index:3;bottom:24px;left:24px;background:#08111cdd;border:1px solid #5fe3ff77;padding:12px 16px;border-radius:9px;color:#bceeff;font-weight:800;letter-spacing:.08em;font-size:13px}
+.strip{background:linear-gradient(100deg,#18294a,#10243a);border-top:1px solid #335072;border-bottom:1px solid #335072}
+.strip-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-block:20px;font-size:13px;font-weight:800;letter-spacing:.05em;color:#d0e8ff}
+.section-heading h2,.catalog-head h2{font-size:clamp(40px,3.4vw,56px);letter-spacing:-.04em;line-height:1.13}
+.section-heading p{font-size:19px}
+.services{gap:23px}
+.service-card{border-radius:15px;min-height:320px;padding:32px;background:linear-gradient(155deg,#17243a,#0d1726)}
+.service-card h3{font-size:24px}
+.service-card p{font-size:18px}
+.service-card a{font-size:17px}
+.catalog-section{background:#0d1524}
+.catalog-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:36px}
+.catalog-head h2{margin:15px 0}
+.catalog-head p{max-width:730px;color:#bccbe0;font-size:19px;line-height:1.6}
+.catalog-head strong{color:#f4f7ff;font-weight:600}
+.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.product-card{background:#121e31;border:1px solid #2b3e5b;border-radius:17px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.product-card:hover{transform:translateY(-5px);border-color:#6fcdfa}
+.product-art{height:220px;position:relative;display:grid;place-items:center;isolation:isolate;overflow:hidden}
+.product-art:before{content:'';position:absolute;width:230px;height:230px;border-radius:50%;background:#5b69e850;filter:blur(40px);z-index:-1}
+.product-category{position:absolute;top:18px;left:20px;letter-spacing:.12em;font-size:12px;font-weight:800;color:#c6eaff;background:#07131b88;padding:8px 11px;border:1px solid #c6eaff30;border-radius:5px}
+.product-glyph{font-family:'Space Grotesk',sans-serif;font-size:68px;font-weight:800;letter-spacing:-.08em;text-shadow:0 0 28px #78dfff66;border:2px solid #a1caff66;border-radius:20px;padding:8px 35px;background:#101d32bb;box-shadow:12px 12px 0 #080f1c80}
+.art-gamer{background:linear-gradient(120deg,#162c4a,#202042),url('https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=80') center/cover}
+.art-work{background:linear-gradient(125deg,#243956,#0f2534)}
+.art-gpu{background:linear-gradient(125deg,#3b254e,#131e3a)}
+.art-ram{background:linear-gradient(125deg,#113e47,#132539)}
+.art-ssd{background:linear-gradient(125deg,#243454,#111f37)}
+.art-case{background:linear-gradient(125deg,#26324c,#20203e)}
+.product-body{padding:26px;display:flex;flex-direction:column;flex:1}
+.product-body h3{font-size:24px;margin-bottom:10px}
+.product-body p{font-size:17px;line-height:1.6;color:#c0cee0;flex:1;margin-bottom:15px}
+.no-price{font-size:14px;color:#9bc0d7;display:block;margin-bottom:20px}
+.btn-outline{border-color:#41627c;background:transparent;color:#e1f6ff;width:100%}
+.btn-outline:hover{border-color:#78dfff;background:#78dfff16}
+.catalog-note{font-size:14px;color:#92a7c3;margin:22px 0 0}
+@media(min-width:1550px){.wrap{width:min(calc(100% - 100px),var(--max))}}
+@media(max-width:1100px){.wrap{width:calc(100% - 48px)}.hero-store .hero-grid{gap:25px}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-store h1{font-size:clamp(48px,5vw,68px)}}
+@media(max-width:900px){.nav-links{display:none}.nav-links.is-open{display:flex}.hamburger{display:block}.hero-store .hero-grid{grid-template-columns:1fr}.photo-hero{min-height:500px}.catalog-head{align-items:start;flex-direction:column}}
+@media(max-width:600px){.wrap{width:calc(100% - 36px)}.hero-store{padding:55px 0}.hero-store h1{font-size:clamp(44px,10vw,60px)}.hero-store .lead{font-size:18px}.photo-hero{min-height:400px}.photo-hero .pc{transform:scale(.77) perspective(900px) rotateY(-10deg)}.strip-inner{gap:12px;font-size:12px}.catalog-grid{grid-template-columns:1fr}.product-art{height:195px}.service-card p{font-size:17px}.catalog-head h2{font-size:38px}}
+
 </style>
 </head>
 <body>
-  <header class="site-header"><div class="wrap nav"><a class="brand" href="#inicio" aria-label="T&A Tech, volver al inicio"><span class="brand-icon">T&A</span><span class="brand-copy"><strong>Tiziano & Anne</strong><small>SERVICIO TÉCNICO & PC BUILDER</small></span></a><nav class="nav-links" id="navLinks" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#armado">Armado & Upgrade</a><a href="#optimizacion">Optimización</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav><a class="btn btn-primary header-cta wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera consultar por un servicio técnico." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><button class="hamburger" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">☰</button></div></header>
-  <main><section class="hero" id="inicio"><div class="glow a"></div><div class="glow b"></div><div class="wrap hero-grid"><div><span class="eyebrow">Tu tecnología, en buenas manos</span><h1>Más potencia.<br><span>Menos problemas.</span></h1><p class="lead">Armamos, optimizamos y reparamos tu PC para que funcione como tiene que funcionar. Asesoramiento claro, atención directa y soluciones a tu medida.</p><div class="hero-actions"><a class="btn btn-primary wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera solicitar un presupuesto para mi PC." target="_blank" rel="noopener noreferrer">Solicitar presupuesto ↗</a><a class="btn btn-secondary" href="#servicios">Explorar servicios ↓</a></div><div class="trust"><span>Atención personalizada</span><span>Diagnóstico claro</span><span>GBA y CABA</span></div></div><div class="hero-visual" role="img" aria-label="Gabinete de computadora gamer ilustrado con ventiladores RGB animados, motherboard y placa de video"><div class="visual-orbit"></div><div class="pc"><div class="fan one"></div><div class="fan two"></div><div class="fan three"></div><div class="motherboard"></div><div class="gpu">RTX PERFORMANCE</div></div><div class="spec top"><span class="signal"></span>PC BUILD<small>Custom setup</small></div><div class="spec bottom">RGB SYSTEM <small>Power your game ⚡</small></div></div></div></section>
-  <section class="section section-alt" id="servicios"><div class="wrap"><div class="section-heading"><span class="eyebrow">Lo que hacemos</span><h2>Soluciones para que tu equipo <span class="gradient-text">rinda al máximo.</span></h2><p>Desde la primera PC hasta una estación de trabajo completa: te acompañamos en cada paso.</p></div><div class="services">
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="#inicio" aria-label="T&A Tech, volver al inicio"><span class="brand-icon">T&A</span><span class="brand-copy"><strong>Tiziano & Anne</strong><small>SERVICIO TÉCNICO & PC BUILDER</small></span></a><nav class="nav-links" id="navLinks" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#catalogo">Catálogo</a><a href="#armado">Armado & Upgrade</a><a href="#optimizacion">Optimización</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav><a class="btn btn-primary header-cta wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera consultar por un servicio técnico." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><button class="hamburger" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">☰</button></div></header>
+  <main>
+<section class="hero hero-store" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">T&A TECH · SERVICIO TÉCNICO Y PC BUILDER</span>
+      <h1>Tu próxima PC empieza <span>acá.</span></h1>
+      <p class="lead">Armamos computadoras a medida, reparamos equipos y te ayudamos a elegir los componentes correctos. Hablás directamente con Tiziano y Anne.</p>
+      <div class="hero-actions"><a class="btn btn-primary wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por una PC o un servicio técnico." target="_blank" rel="noopener noreferrer">Pedir presupuesto ↗</a><a class="btn btn-secondary" href="#catalogo">Ver PCs y componentes ↓</a></div>
+      <div class="trust"><span>Armados a medida</span><span>Servicio técnico</span><span>CABA y GBA</span></div>
+    </div>
+    <div class="hero-visual photo-hero" role="img" aria-label="Computadora gamer iluminada en tonos azul y violeta">
+      <div class="photo-image"></div>
+      <div class="visual-orbit"></div>
+      <div class="pc"><div class="fan one"></div><div class="fan two"></div><div class="fan three"></div><div class="motherboard"></div><div class="gpu">PC BUILDER</div></div>
+      <div class="photo-tag">GAMER / WORKSTATION / OFICINA</div>
+    </div>
+  </div>
+</section>
+<div class="strip"><div class="wrap strip-inner"><span>ARMADO PERSONALIZADO</span><span>MANTENIMIENTO Y REPARACIÓN</span><span>UPGRADES Y COMPONENTES</span><span>ATENCIÓN DIRECTA</span></div></div>
+<section class="section section-alt" id="servicios"><div class="wrap"><div class="section-heading"><span class="eyebrow">Lo que hacemos</span><h2>Todo lo que necesitás <span class="gradient-text">para tu PC.</span></h2><p>Armado, reparación y mantenimiento. Elegí el servicio que necesitás y consultanos sin vueltas.</p></div><div class="services">
     <article class="service-card"><div class="service-icon" aria-hidden="true">▣</div><h3>Armado de PC a medida</h3><p>PC Gamer, streaming, edición u oficina. Elegimos componentes compatibles y ensamblamos tu equipo según tu uso y presupuesto.</p><a class="wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por el armado de una PC a medida." target="_blank" rel="noopener noreferrer">Consultar armado →</a></article>
     <article class="service-card" id="optimizacion"><div class="service-icon" aria-hidden="true">⚡</div><h3>Optimización y software</h3><p>Mejoras de rendimiento en Windows, eliminación de malware, limpieza del sistema, formateo e instalación de drivers.</p><a class="wa-link" href="#" data-message="Hola Tiziano y Anne, necesito optimizar mi PC o solucionar un problema de software." target="_blank" rel="noopener noreferrer">Consultar optimización →</a></article>
     <article class="service-card"><div class="service-icon" aria-hidden="true">❄</div><h3>Mantenimiento y hardware</h3><p>Limpieza interna, cambio de pasta térmica, revisión de thermal pads y ordenado de cables para mejorar refrigeración.</p><a class="wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por mantenimiento físico de mi PC." target="_blank" rel="noopener noreferrer">Consultar mantenimiento →</a></article>
@@ -135,6 +210,22 @@
     <article class="service-card"><div class="service-icon" aria-hidden="true">⌕</div><h3>Diagnóstico y reparación</h3><p>Detectamos fallas, pantallazos azules, problemas de encendido, altas temperaturas y ruidos anormales.</p><a class="wa-link" href="#" data-message="Hola Tiziano y Anne, mi PC tiene una falla y quisiera consultar por un diagnóstico." target="_blank" rel="noopener noreferrer">Consultar reparación →</a></article>
     <article class="service-card"><div class="service-icon" aria-hidden="true">⌘</div><h3>Soporte remoto y asistencia</h3><p>Ayuda online, configuración de periféricos, redes hogareñas y pequeñas empresas. Consultá disponibilidad para retiro o visita.</p><a class="wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera consultar por soporte remoto, asistencia o retiro de equipo." target="_blank" rel="noopener noreferrer">Consultar soporte →</a></article>
   </div></div></section>
+  
+<section class="section catalog-section" id="catalogo">
+  <div class="wrap">
+    <div class="catalog-head"><div><span class="eyebrow">PCs y componentes</span><h2>Elegí qué necesitás.<br><span class="gradient-text">Nosotros te asesoramos.</span></h2><p>Consultá por configuraciones y componentes según tu presupuesto. <strong>La disponibilidad y los precios se confirman por WhatsApp.</strong></p></div><a class="btn btn-secondary wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera saber qué PCs y componentes tienen disponibles." target="_blank" rel="noopener noreferrer">Consultar disponibilidad ↗</a></div>
+    <div class="catalog-grid">
+      <article class="product-card"><div class="product-art art-gamer"><span class="product-category">COMPUTADORAS</span><div class="product-glyph">▣</div></div><div class="product-body"><h3>PC Gamer a medida</h3><p>Para jugar, hacer streaming o dar el salto a una nueva configuración.</p><span class="no-price">Configuración y precio a consultar</span><a class="btn btn-outline wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera consultar por una PC Gamer a medida. ¿Me asesoran?" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div></article>
+      <article class="product-card"><div class="product-art art-work"><span class="product-category">COMPUTADORAS</span><div class="product-glyph">▤</div></div><div class="product-body"><h3>PC para estudio y trabajo</h3><p>Una configuración equilibrada para oficina, estudio y uso diario.</p><span class="no-price">Configuración y precio a consultar</span><a class="btn btn-outline wa-link" href="#" data-message="Hola Tiziano y Anne, quisiera consultar por una PC para estudiar o trabajar." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div></article>
+      <article class="product-card"><div class="product-art art-gpu"><span class="product-category">COMPONENTES</span><div class="product-glyph">GPU</div></div><div class="product-body"><h3>Placas de video</h3><p>Te ayudamos a elegir una GPU compatible con tu equipo.</p><span class="no-price">Disponibilidad y precio a consultar</span><a class="btn btn-outline wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar disponibilidad y precio de placas de video." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div></article>
+      <article class="product-card"><div class="product-art art-ram"><span class="product-category">COMPONENTES</span><div class="product-glyph">RAM</div></div><div class="product-body"><h3>Memorias RAM</h3><p>Ampliación de memoria, compatibilidad e instalación.</p><span class="no-price">Disponibilidad y precio a consultar</span><a class="btn btn-outline wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por memorias RAM compatibles con mi PC." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div></article>
+      <article class="product-card"><div class="product-art art-ssd"><span class="product-category">COMPONENTES</span><div class="product-glyph">SSD</div></div><div class="product-body"><h3>SSD y almacenamiento</h3><p>Opciones de almacenamiento y migración de sistema.</p><span class="no-price">Disponibilidad y precio a consultar</span><a class="btn btn-outline wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por discos SSD y almacenamiento." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div></article>
+      <article class="product-card"><div class="product-art art-case"><span class="product-category">COMPONENTES</span><div class="product-glyph">PC</div></div><div class="product-body"><h3>Gabinetes y fuentes</h3><p>Elegimos gabinete y fuente adecuados para tu armado.</p><span class="no-price">Disponibilidad y precio a consultar</span><a class="btn btn-outline wa-link" href="#" data-message="Hola Tiziano y Anne, quiero consultar por gabinetes o fuentes para PC." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div></article>
+    </div>
+    <p class="catalog-note">Estas son categorías para consultas: no representan productos publicados, stock confirmado ni precios vigentes.</p>
+  </div>
+</section>
+
   <section class="section" id="armado"><div class="wrap highlight"><div class="highlight-box"><span class="chip">CUSTOM PC / PERFORMANCE</span><div class="performance">Tu próxima PC.<br><span>Tu próximo nivel.</span></div><div><p class="muted" style="font-size:12px;margin-bottom:8px">SETUP OPTIMIZADO · SEGÚN TU PRESUPUESTO</p><div class="meter"></div></div></div><div><span class="eyebrow">Armado & Upgrade</span><div class="section-heading" style="margin:14px 0"><h2>Un equipo pensado <span class="gradient-text">para vos.</span></h2><p>No se trata solo de comprar componentes. Se trata de elegir los correctos para tu objetivo.</p></div><ul class="feature-list"><li>Asesoramiento en compatibilidad y rendimiento.</li><li>Armado profesional y cable management.</li><li>Actualizaciones inteligentes, sin gastar de más.</li><li>Pruebas y puesta a punto del equipo.</li></ul><a class="btn btn-secondary wa-link" href="#" data-message="Hola Tiziano y Anne, quiero asesoramiento para armar o actualizar mi PC." target="_blank" rel="noopener noreferrer">Hablemos de tu PC ↗</a></div></div></section>
   
   <section class="section reviews" id="resenas">
