@@ -64,6 +64,46 @@
       .hero-actions .btn{max-width:100%}
     }
 
+
+    /* Escala tipográfica accesible y legible para todas las pantallas */
+    body{font-size:clamp(17px,1.08vw,19px);line-height:1.65}
+    .brand-copy strong{font-size:clamp(19px,1.22vw,23px)}
+    .brand-copy small{font-size:12px;letter-spacing:.025em}
+    .nav-links{font-size:clamp(15px,.97vw,17px);gap:clamp(16px,1.35vw,28px)}
+    .btn{font-size:clamp(15px,.98vw,17px);min-height:52px;padding:14px 22px}
+    .hero h1{font-size:clamp(46px,4.6vw,88px);line-height:1.09;letter-spacing:-.045em}
+    .lead{font-size:clamp(18px,1.35vw,23px);line-height:1.65;max-width:750px}
+    .eyebrow{font-size:clamp(13px,.85vw,15px);letter-spacing:.09em}
+    .trust{font-size:clamp(14px,.91vw,16px);gap:15px}
+    .section-heading h2{font-size:clamp(35px,3.15vw,60px);line-height:1.13}
+    .section-heading p{font-size:clamp(17px,1.12vw,20px)}
+    .service-card h3{font-size:clamp(22px,1.4vw,27px);line-height:1.25}
+    .service-card p{font-size:clamp(17px,1.08vw,19px);line-height:1.6}
+    .service-card a{font-size:clamp(16px,1.02vw,18px)}
+    .highlight h2,.contact-banner h2{font-size:clamp(34px,2.7vw,54px);line-height:1.15}
+    .highlight p,.highlight li,.why-item p,.info-block p,.contact-banner p{font-size:clamp(17px,1.08vw,20px)}
+    .why-item h3,.info-block h3{font-size:clamp(21px,1.3vw,26px)}
+    .faq-question{font-size:clamp(18px,1.17vw,22px);min-height:72px}
+    .faq-answer{font-size:clamp(17px,1.07vw,19px);line-height:1.65}
+    .footer,.footer-nav,.footer p{font-size:clamp(15px,.98vw,18px)}
+    .copyright{font-size:14px}
+    .chip,.muted{font-size:clamp(15px,.98vw,18px)}
+    @media(max-width:820px){
+      .hero h1{font-size:clamp(42px,7.2vw,68px)}
+      .section-heading h2{font-size:clamp(33px,5.5vw,48px)}
+      .nav-links{font-size:18px}
+    }
+    @media(max-width:560px){
+      body{font-size:17px}
+      .hero h1{font-size:clamp(39px,10vw,54px)}
+      .lead{font-size:18px}
+      .section-heading h2{font-size:clamp(32px,8vw,42px)}
+      .service-card h3{font-size:23px}
+      .service-card p{font-size:17px}
+      .btn{font-size:16px}
+      .trust{font-size:14px}
+    }
+
   </style>
 </head>
 <body>
