@@ -228,6 +228,24 @@ body{font-size:18px;color:#f5f8ff;background:#090f1b}
  .service-card p,.product-body p{font-size:18px}
 }
 
+
+/* Hero gamer: RGB fucsia, violeta y ámbar con ventiladores animados */
+.photo-hero{background:radial-gradient(circle at 62% 40%,#56234c88,transparent 45%),linear-gradient(145deg,#121521,#080d16);border:1px solid #57516a}
+.photo-hero .photo-image{opacity:.16;filter:saturate(.85) brightness(.65)}
+.photo-hero .visual-orbit{border-color:#e080b52a;box-shadow:0 0 100px #e94c9d1a}
+.photo-hero .pc{width:300px;height:440px;border:9px solid #26232c;border-radius:19px;background:radial-gradient(circle at 48% 40%,#582b4655,transparent 55%),linear-gradient(130deg,#21212b,#090e18);box-shadow:20px 28px 0 #070910,27px 36px 70px #000b,0 0 65px #fe52a425;transform:perspective(950px) rotateY(-10deg) rotateX(4deg)}
+.photo-hero .pc:before{inset:7px;border:1px solid #ffb1d066;background:linear-gradient(110deg,#fff2 0%,transparent 19%,transparent 72%,#fff1 95%);box-shadow:inset 0 0 32px #fa4d9840;pointer-events:none}
+.photo-hero .pc:after{background:linear-gradient(90deg,#ff4f98,#bf62ed,#ff994f);opacity:.85}
+.photo-hero .fan{border:7px solid #343041;background:radial-gradient(circle,#130c19 9%,transparent 13%),conic-gradient(#ff4b9d,#f48346,#bd50ff,#ff4b9d);box-shadow:0 0 19px #ff4b9d8c,inset 0 0 16px #120914;animation:rgbWarm 6s ease-in-out infinite alternate}
+.photo-hero .fan:after{content:'';width:62px;height:62px;background:radial-gradient(circle,#171824 0 13%,transparent 14%),repeating-conic-gradient(#1d1929 0 22deg,#615170 23deg 37deg);box-shadow:inset 0 0 10px #000a;animation:spin 3.8s linear infinite}
+.photo-hero .motherboard{background:repeating-linear-gradient(0deg,transparent 0 16px,#543f56 17px 19px,transparent 20px 28px),#201b2b;border-color:#7e5576;box-shadow:0 0 18px #f252a02e}
+.photo-hero .motherboard:after{border-color:#fd87c9;box-shadow:0 0 19px #fd60ad9c}
+.photo-hero .gpu{background:linear-gradient(110deg,#292132,#4a2d46);border-color:#815a7a;box-shadow:0 0 25px #fe4a9c60}
+.photo-hero .gpu:before{background:linear-gradient(90deg,#ff4f98,#a45cff,#ffad63);box-shadow:0 0 14px #f76bad}
+.photo-hero .photo-tag{border-color:#f684bb7a;color:#ffe4f3}
+@keyframes rgbWarm{0%{filter:saturate(1) brightness(.94)}50%{filter:hue-rotate(23deg) saturate(1.2) brightness(1.11)}100%{filter:hue-rotate(-18deg) brightness(1.05)}}
+@media(max-width:600px){.photo-hero .pc{transform:scale(.77) perspective(950px) rotateY(-10deg) rotateX(4deg)}}
+
 </style>
 </head>
 <body>
