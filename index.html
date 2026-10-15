@@ -332,6 +332,15 @@ body{font-size:18px;color:#f5f8ff;background:#090f1b}
 .strip-moving .strip-group{gap:40px;padding:16px 25px}
 .strip-moving .strip-group span{font-size:14px;letter-spacing:.035em;gap:40px}
 @media(prefers-reduced-motion:reduce){.strip-moving .strip-track{animation:none!important}}
+
+/* Quiénes somos: composición editorial centrada */
+#nosotros{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 5%,rgba(105,75,190,.11),transparent 57%),#0b1221}
+#nosotros>.wrap>.section-heading{max-width:970px;margin:0 auto clamp(42px,4vw,65px);text-align:center}
+#nosotros .section-heading h2{font-size:clamp(40px,3.8vw,67px);max-width:960px;margin:0 auto 27px;line-height:1.14;letter-spacing:-.045em;text-wrap:balance}
+#nosotros .section-heading p{max-width:830px;margin:0 auto 18px;font-size:clamp(18px,1.2vw,21px);line-height:1.72;color:#c2d1e7;text-wrap:pretty}
+#nosotros .section-heading p+p{margin-top:19px}
+#nosotros .why-grid{margin-top:0}
+@media(max-width:680px){#nosotros>.wrap>.section-heading{text-align:left;margin-bottom:35px}#nosotros .section-heading h2{font-size:clamp(35px,9vw,47px);margin-bottom:20px}#nosotros .section-heading p{font-size:17px;line-height:1.7}}
 </style>
 </head>
 <body>
